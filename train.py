@@ -66,7 +66,7 @@ if __name__ == "__main__":
             outputs = model(
                 batch_dict[0],
                 token_type_ids = batch_dict[1],
-                position_ids = batch_dict[2],
+                attention_mask = batch_dict[2],
                 labels = batch_dict[3]
                 )
             loss, logits = outputs[:2]
@@ -94,7 +94,7 @@ if __name__ == "__main__":
             outputs = model(
                 batch_dict[0],
                 token_type_ids = batch_dict[1],
-                position_ids = batch_dict[2],
+                attention_mask = batch_dict[2],
                 labels = batch_dict[3]
                 )
             loss, logits = outputs[:2]
